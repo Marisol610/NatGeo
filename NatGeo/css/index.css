@@ -1,0 +1,480 @@
+/*global*/
+*{
+    margin: 0;
+    padding:0;
+}
+:root{
+    --dark:#1f1f1f;
+    --yll:rgb(238, 205, 17);
+}
+body{
+    font-family: 'lato', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/* menu*/
+.img-logo{
+    display: none;
+}
+.img-logo-square{
+    display: block;
+    width: 50px;
+}
+.menu-text{
+    display: none;
+}
+@media(min-width:768px){
+    .img-logo{
+        display: block;
+        width: 100px;
+        height: 50px;
+        padding-left:.5rem;
+        padding-top: .5rem;
+    }
+    .img-logo-square{
+        display: none;
+    }
+    .menu-text{
+        display: block;
+        text-transform: uppercase;
+        letter-spacing:  .2rem;
+        font-size: 13px;
+        font-weight: 700;
+    }
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 50px;   
+}
+.menu i{
+    font-size: 16px;
+    color: var(--dark);
+}
+.fa-search{
+    display: none;
+}
+.subscribe-text{
+    display:none;
+
+}
+@media(min-width:768px){
+    .fa-search{
+    display: block;
+    }
+    .subscribe-text{
+     display: block;
+    }
+}
+.menu-subsection{
+    display: flex;
+    align-items:center ;
+    
+} 
+.fa-user{
+    margin-right: 1rem;
+    padding-right:  1rem;
+    border-right:  1px solid #b8b5b5;
+}  
+.fa-user:hover{
+    color: var(--dark);
+    cursor: pointer;
+}
+@media(min-width:768px){
+    .fa-user{
+    margin-right: .5rem;
+    padding-right: .5rem;
+    border: none;
+    }
+    .subscribe-text{
+    margin-right: .5rem;
+    padding-right: .5rem;
+    }
+    .fa-search{
+    margin-right: 1rem;
+    padding-right: 1rem;
+    }
+}
+
+.fa-angle-double-down{
+    margin-right: 1rem;
+
+}
+/*main*/
+main{
+    background-color: black;
+    color: white;
+    height: 70vh;
+    padding-top: 20px;
+    padding-bottom: 500px;
+}
+main h1{
+    font-size: 2.4rem;
+    font-weight:  700;
+    text-transform: uppercase;
+    text-align: center;
+    word-spacing:  .4rem;
+    letter-spacing:  .2rem;
+}
+main p{
+    text-align: center;
+    font-size: 1.2rem;
+    width: 80%
+}
+main p strong{
+    font-weight: 400;
+    border-bottom: 3px solid var(--yll);
+}
+main p strong:hover{
+    background-color:  var(--yll);
+    color: black;
+    cursor:pointer;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.line{
+    margin:3rem 0 5rem 0;
+    text-align: center;
+    width: 5rem;
+    border-bottom: 3px solid var(--primary);
+}
+
+/*news-section*/
+
+/*main-news*/
+.main-news{
+    position: relative;
+    display:block;
+    background-image: url(https://www.nationalgeographic.com/content/dam/magazine/rights-exempt/2020/10/bengal-girls/bengal-girls-runaway-after-fight-with-mother.adapt.885.1.jpg);
+    background-position: center center;
+    background-size: cover;
+    width:22rem;
+    height:28rem;
+    border-right:  4px solid var(--yll) ;
+    border-bottom: 4px solid var(--yll);
+    margin-right: auto;
+    margin-left: auto;
+}
+.main-news-text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.main-news-text .news-title{
+    color: white;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 900;
+    letter-spacing: .3rem;
+    text-align: left;
+    padding-left: 1rem;
+    padding-bottom:  1rem;
+
+}
+.main-news-text .news-info{
+    color: white;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 900;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+
+
+}
+.main-news-text .news-icon{
+    color: white;
+    text-transform: uppercase;
+    font-size: .7rem;
+    font-weight: 900;
+    letter-spacing:  .3rem;
+    text-align: left;
+    padding-left:  1rem;
+    padding-bottom: 1rem;
+}
+/*news*/
+
+.news{
+    display: inline-block;
+    width: 20rem;
+    height:20rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    
+}
+.news-text{
+    margin-top: -1.2rem;
+    display:block;
+    background-color: white;
+    color: black; 
+    
+}
+.news-text .news-title{
+    padding-top:  1.7rem;
+    color: rgb(156, 156, 156);
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 900;
+    letter-spacing: .3rem;
+    text-align: left;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+
+}
+.news-text .news-info{
+    color: black;
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: 900;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+.news-text .news-icon{
+    color: black;
+    text-transform: uppercase;
+    font-size:  .7rem;
+    font-weight: 900;
+    letter-spacing: .3rem;
+    text-align: left;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+/* picks-section*/
+
+.picks-section{
+    display: block;
+    width: 70%;
+    position: absolute;
+    top: 325px;
+    left: 0;
+    margin-bottom: 0;
+    padding-left: 400px;
+    
+
+}
+.picks-section h2{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-left: 4px solid var(--yll);
+    padding-bottom: .7rem;
+    margin-left: auto;
+    letter-spacing: 5px;
+    padding-left: 1rem;
+
+}
+.pick{
+    display: flex;
+    justify-content:  space-around;
+    padding-bottom:  2rem;
+    width: 20rem;
+}
+.pick img{
+    width: 5rem;
+    display: block;
+    height: 5rem;
+    margin-left: auto;
+    padding-left: 20px;
+}
+.pick h3{
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 300;
+    padding-left: 1rem;
+}
+.pick p{
+    text-align: left;
+    font-size:  1rem;
+    padding-left: 1rem;
+}
+@media(min-width:768px){
+    .sections{
+        display: flex;
+        width: 60%;
+        flex-direction: row-reverse;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-news{
+        width:44rem;
+        height: 22rem;
+    }
+    .news-container{
+        display: flex;    
+    }
+}
+    /*competency report*/
+    .article-section h4{
+    font-size: 2rem;
+    font-weight:  700;
+    text-transform: uppercase;
+    text-align: center;
+    word-spacing:  .4rem;
+    letter-spacing:  .3rem;
+    border-bottom: 4px solid var(--yll);
+    padding-top: 4rem;
+    
+    }
+    .article-section img{
+        float: left;
+        height: 20rem;
+        width: 28rem;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        padding-left: 31rem;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .article-text .article-title{
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-align: left;
+        padding-left: 70px;
+        margin-top: 0;
+        padding-top: 80px;
+        
+    }
+    .article-text .article-info{
+        display: block;
+        font-size: 1rem;
+        margin-right: 10px;
+        margin-left: 20px;
+        padding-right: 20px;
+        padding-left: 10px;
+        padding-right: 450px;
+
+}
+        
+    .learn-btn{
+    font-family: "Abel" sans-serif;
+    font-weight:  700;;
+    padding:  2rem;
+    width: 50%;
+    display: 1px solid black;
+    font-size: .8rem;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: .2rem;
+
+}
+
+/*footer*/
+.footer-section{
+    background-color: #e4e3e3;
+    padding: 1.5rem;
+
+}
+.section-container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(min-width:768px){
+    .section-container{
+        display: flex;
+        justify-content: space-between;
+    
+    }
+}
+    .fa-facebook-f{
+    color: rgb(39, 39, 114);
+    }
+    .fa-twitter{
+    color: rgb(17, 158, 194);
+    }
+    .fa-instagram{
+    color: black;
+    }
+    .fa-flipboard{
+    color: red;
+    }
+
+h5{
+    font-family: "Abel" sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    border-left: 3px solid black;
+    padding-left: .8rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}    
+#Email{
+    font-family: "Abel" sans-serif;
+    font-weight: 700;
+    padding:  .7rem;
+    width: 95%;
+    display: block;
+    background-color: white;
+    font-size: 1rem;
+    color: #4b4b4b;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+.btn{
+    font-family:  "Abel" sans-serif;
+    font-weight:  700;
+    padding:  .7rem;
+    width: 100%;
+    display: block;
+    background-color: #3f3f3f;
+    font-size: 1rem;
+    color: #ffffff;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.btn:hover{
+    color:var(--yll);
+    cursor: pointer;
+}
+form{
+    display: flex;
+}
+@media(min-width:768px){
+    #Email{
+        width: 16rem;
+        margin-right: .5rem;
+        
+    }
+    .btn{
+        width:10rem;
+    }
+}
+.link-text{
+    display: block;
+    font-family: sans-serif;
+    letter-spacing: 2.5px;
+    font-size: 12px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 1rem;
+    padding-left: 35px;
+}
+.link-text p{
+    margin-top:  2rem;
+    margin-bottom:  1rem;
+
+}
+@media(min-width:768px){
+    .link-text{
+        display: flex;
+    }
+    .link-text p{
+        margin-right:  2rem;
+    }
+  
+}
